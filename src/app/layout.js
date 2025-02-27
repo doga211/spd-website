@@ -27,27 +27,6 @@
 //     </html>
 //   );
 // }
-// import Footer from "@/Components/Footer";
-// import Navbar from "@/Components/Navbar";
-// import "./globals.css";
-// import ScrollUpButton from "@/Components/ScrollupButton";
-
-// export default function Layout({ children }) {
-//   return (
-   
-//       <html>
-//       <body>
-//       <div className="bg-white text-gray-900">
-//       <Navbar />
-//       <main className=" mx-auto p-4">{children}</main>
-//       <Footer />
-//       <ScrollUpButton/>
-//       </div>
-//       </body>
-//       </html>
-    
-//   );
-// }
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import "./globals.css";
@@ -55,14 +34,17 @@ import ScrollUpButton from "@/Components/ScrollupButton";
 
 export default function Layout({ children }) {
   return (
+   
     <html lang="en">
-      <head />
-      <body className="bg-white text-gray-900">
-        <Navbar />
-        <main className="mx-auto p-4">{children}</main>
-        <Footer />
-        <ScrollUpButton />
+      <body>
+      <div className="bg-white text-gray-900">
+      <Navbar />
+      <main className=" mx-auto p-4">{children}</main>
+      <Footer />
+      <ScrollUpButton/>
+      </div>
       </body>
-    </html>
+      </html>
+    
   );
 }
