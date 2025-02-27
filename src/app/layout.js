@@ -56,9 +56,9 @@ import ScrollUpButton from "@/Components/ScrollupButton";
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <head />
+       <Navbar />
       <body className="bg-white text-gray-900">
-        <Navbar />
+       
         <main className="mx-auto p-4">{children}</main>
         <Footer />
         <ScrollUpButton />
