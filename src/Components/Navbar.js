@@ -198,12 +198,12 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className="bg-[#f7eed5] p-4 sticky top-0 shadow-md z-50"
+      className="bg-[#f7eed5] p-4 m-4 sticky top-2  mx-2 text-center shadow-md z-50"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-4 m-4 p-4 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/">
           <motion.div

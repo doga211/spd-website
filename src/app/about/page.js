@@ -67,8 +67,8 @@ import Image from "next/image";
 const teamMembers = [
   { name: "Florence Nighty Otto", role: "Executive Director", img: "/ED.png" },
   { name: "Jane Kenyi", role: "Programs Coordinator", img: "/jane.jpg" },
-  { name: "Michael Brown", role: "Finance Manager", img: "/team/michael.jpg" },
-  { name: "Emily White", role: "Community Outreach", img: "/team/emily.jpg" },
+  { name: "Michael Brown", role: "Finance Manager", img: "/jane.jpg" },
+  { name: "Emily White", role: "Community Outreach", img: "/ED.png" },
 ];
 
 export default function About() {
