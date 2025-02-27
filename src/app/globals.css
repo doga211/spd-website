@@ -1,8 +1,9 @@
-@tailwind base; 
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* globals.css */
+
 
 /* Root Font Sizes and Base Settings */
 :root {
@@ -14,7 +15,7 @@
   --primary-color: #6BB23B;
   --secondary-color: #E9D5A2;
   --background-color: #ffffff;
-  --text-color: #111827; /* Updated to dark text for better readability */
+  --text-color: #ffffff;
   --link-color: #6BB23B;
   --button-color: #FAA413;
   --hover-color: #6BB23B;
@@ -144,9 +145,9 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .hero-section h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   
   .container {
@@ -154,35 +155,17 @@ button:hover {
   }
 }
 
-@media (max-width: 1024px) {
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .carousel-container {
-    flex-direction: column;
-  }
-
-  .focus-area-card {
-    margin-bottom: 2rem;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-section h1 {
     font-size: 2rem;
   }
-
+  
   .carousel-container {
     flex-direction: column;
   }
 
   .focus-area-card {
     margin-bottom: 2rem;
-  }
-
-  .container {
-    padding: 0 2rem;
   }
 }
 
@@ -190,17 +173,43 @@ button:hover {
   .hero-section h1 {
     font-size: 1.8rem;
   }
-
-  .focus-area-card {
-    padding: 1.5rem;
-  }
-
-  .carousel-item {
-    flex: 0 0 100%;
-  }
 }
 
-/* Impact Section */
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    background-color: var(--Third-color);
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  /* Impact Section */
 .impact-section {
   background-color: #f9fafb;
 }
@@ -222,6 +231,28 @@ button:hover {
   color: #555;
 }
 
+/* Success Stories Carousel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+.carousel-item {
+  flex: 0 0 80%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
 /* Get Involved Section */
 .get-involved a {
   background-color: var(--primary-color);
@@ -237,18 +268,3 @@ button:hover {
   background-color: var(--secondary-color);
 }
 
-/* Button Primary */
-.btn-primary {
-  background-color: var(--Third-color);
-  color: var(--primary-color);
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
