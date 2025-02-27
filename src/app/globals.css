@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+
+/* Root Font Sizes and Base Settings */
+:root {
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-serif: 'Georgia', serif;
+  --font-family-mono: 'Courier New', monospace;
+  
+  --Third-color: #FAA413;
+  --primary-color: #6BB23B;
+  --secondary-color: #E9D5A2;
+  --background-color: #ffffff;
+  --text-color: #ffffff;
+  --link-color: #6BB23B;
+  --button-color: #FAA413;
+  --hover-color: #6BB23B;
+}
+
+/* Setting a global font family */
+* {
+  font-family: var(--font-family-sans);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Anchor Tags */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--background-color);
+  color: var(--button-color);
+}
+
+/* Container for consistent spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Utility classes for margin and padding */
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Focus Areas Cards */
+.focus-area-card {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focus-area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Stories Carousel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.carousel-item {
+  flex: 0 0 80%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .focus-area-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    background-color: var(--Third-color);
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  /* Impact Section */
+.impact-section {
+  background-color: #f9fafb;
+}
+
+.impact-item {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.impact-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.impact-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Success Stories Carousel */
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+.carousel-item {
+  flex: 0 0 80%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+/* Get Involved Section */
+.get-involved a {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-involved a:hover {
+  background-color: var(--secondary-color);
+}
+
